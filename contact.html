@@ -8,18 +8,49 @@
 </head>
 <body>
     <header>
+        <!-- Banner image -->
+        <img src="assets/images/banner.jpg" alt="Kachra Becho Banner" class="banner">
+        
+        <!-- Logo -->
         <img src="assets/images/logo.png" alt="Kachra Becho Logo" class="logo">
+        
         <h1>Contact Us</h1>
-        <p>Placeholder for address, phone, email, and contact form.</p>
+        <p>We’d love to hear from you! Reach out using the details below or send us a message.</p>
     </header>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </nav>
+
+    <main>
+        <section class="contact-info">
+            <h2>Our Contact Information</h2>
+            
+            <p><strong>Address:</strong> Shapoorji, Newtown Action Area 3, Kolkata, West Bengal, India</p>
+            <p><strong>Phone:</strong> +91 83919 29855</p>
+            <p><strong>Email:</strong> <a href="mailto:nabindutta1993@gmail.com">info@kachrabecho.com</a></p>
+
+            <h3>Send Us a Message</h3>
+            <form action="mailto:nabindutta1993@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
-        &copy; 2025 Kachra Becho. All Rights Reserved.
+        &copy; 2025 Kachrabecho. All Rights Reserved.
     </footer>
 </body>
 </html>

@@ -1,10 +1,189 @@
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: Arial,sans-serif; background:#f2f2f2; color:#333; line-height:1.6; }
-header, nav, main, footer { padding:20px; text-align:center; }
-nav a { margin:0 15px; text-decoration:none; color:#333; font-weight:bold; }
-nav a:hover { color:#007bff; }
-.logo { width:120px; margin-bottom:20px; }
-.banner { width:100%; max-height:300px; object-fit:cover; margin-bottom:20px; border-radius:5px; }
-h1 { font-size:2.5em; margin-bottom:0.5em; }
-p { font-size:1.2em; }
-footer { margin-top:40px; font-size:0.9em; color:#555; }
+/* General reset and body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header, nav, main, footer */
+header, nav, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Logo and Banner */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Headings and paragraphs */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2, h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about-section {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Services Section */
+.services-section {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.services-section h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Contact Section */
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.contact-info h2, .contact-info h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info input,
+.contact-info textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-info button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-info button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .banner {
+        max-height: 200px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2, h3 {
+        font-size: 1.5em;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
